@@ -26,6 +26,9 @@ namespace Assignment4_3_3 {
             else
                 Console.WriteLine($"Numbers that appear only once: {string.Join(", ", singles)}");
 
+            if (Console.ReadKey(true).Key == ConsoleKey.Enter)
+                Environment.Exit(0);
+
         }
 
         static List<int> ReadNumbers() {
